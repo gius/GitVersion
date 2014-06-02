@@ -82,6 +82,9 @@
     <Compile Include="GitFlow\BranchFinders\SupportVersionFinder.cs" />
     <Compile Include="GitFlow\BranchType.cs" />
     <Compile Include="GitFlow\GitFlowVersionFinder.cs" />
+    <Compile Include="GusFlow\GitHelper.cs" />
+    <Compile Include="GusFlow\GusFlowVersionFinder.cs" />
+    <Compile Include="GusFlow\LastPlannedReleaseFinder.cs" />
     <Compile Include="MergeMessageParser.cs" />
     <Compile Include="GitHubFlow\BuildNumberCalculator.cs" />
     <Compile Include="GitHubFlow\GitHubFlowVersionFinder.cs" />
