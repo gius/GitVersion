@@ -15,6 +15,11 @@ namespace GitVersion
             return new GusFlowVersionFinder().FindVersion(context);
         }
 
+        public static bool ShouldGitHubFlowVersioningSchemeApply(IRepository repo)
+        {
+            return repo.FindBranch("develop") == null;
+        }
+
         void EnsureMainTopologyConstraints(GitVersionContext context)
         {
             EnsureLocalBranchExists(context.Repository, "master");

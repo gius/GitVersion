@@ -176,7 +176,9 @@ namespace GitVersionCore.GusFlow
                     ReleaseDate = new ReleaseDate
                     {
                         OriginalCommitSha = sourceCommit.Sha,
-                        OriginalDate = sourceCommit.When()
+                        OriginalDate = sourceCommit.When(),
+                        CommitSha = sourceCommit.Sha,
+                        Date = sourceCommit.When()
                     }
                 }
             };
